@@ -36,7 +36,12 @@ public class WinnerState implements State {
 	}
  
 	public void refill() { }
-	
+
+	@Override
+	public void tryMyLuck() {
+
+	}
+
 	public String toString() {
 		return "despensing two gumballs for your quarter, because YOU'RE A WINNER!";
 	}

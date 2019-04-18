@@ -30,7 +30,12 @@ public class SoldState implements State {
 	}
 	
 	public void refill() { }
- 
+
+	@Override
+	public void tryMyLuck() {
+
+	}
+
 	public String toString() {
 		return "dispensing a gumball";
 	}

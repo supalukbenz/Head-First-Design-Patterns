@@ -1,6 +1,6 @@
 package headfirst.designpatterns.factory.pizzafm;
 
-public class NYPizzaStore extends PizzaStore {
+public class NYPizzaStorePizza extends PizzaStore {
 
 	Pizza createPizza(String item) {
 		if (item.equals("cheese")) {
@@ -11,6 +11,9 @@ public class NYPizzaStore extends PizzaStore {
 			return new NYStyleClamPizza();
 		} else if (item.equals("pepperoni")) {
 			return new NYStylePepperoniPizza();
-		} else return null;
+		} else if (item.equals("Halal")) {
+			return new NYStyleHalal();
+		}
+		else return null;
 	}
 }

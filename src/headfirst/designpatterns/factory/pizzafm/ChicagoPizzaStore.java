@@ -10,7 +10,9 @@ public class ChicagoPizzaStore extends PizzaStore {
         	} else if (item.equals("clam")) {
         	    	return new ChicagoStyleClamPizza();
         	} else if (item.equals("pepperoni")) {
-            		return new ChicagoStylePepperoniPizza();
+				return new ChicagoStylePepperoniPizza();
+			}else if (item.equals("halal")) {
+        		return new ChicagoStyleHalalPizza();
         	} else return null;
 	}
 }

@@ -25,7 +25,12 @@ public class NoQuarterState implements State {
 	} 
 	
 	public void refill() { }
- 
+
+	@Override
+	public void tryMyLuck() {
+		System.out.println("You haven't inserted a quarter");
+	}
+
 	public String toString() {
 		return "waiting for quarter";
 	}
